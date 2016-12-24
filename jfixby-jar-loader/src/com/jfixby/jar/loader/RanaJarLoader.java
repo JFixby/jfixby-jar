@@ -4,10 +4,6 @@ package com.jfixby.jar.loader;
 import java.io.IOException;
 import java.net.URLClassLoader;
 
-import com.jfixby.cmns.api.collections.Collection;
-import com.jfixby.cmns.api.collections.Collections;
-import com.jfixby.cmns.api.collections.List;
-import com.jfixby.cmns.api.debug.Debug;
 import com.jfixby.rana.api.pkg.PackageFormat;
 import com.jfixby.rana.api.pkg.PackageHandler;
 import com.jfixby.rana.api.pkg.PackageReader;
@@ -15,6 +11,10 @@ import com.jfixby.rana.api.pkg.PackageReaderInput;
 import com.jfixby.rana.api.pkg.PackageReaderListener;
 import com.jfixby.rana.api.pkg.ResourcesManager;
 import com.jfixby.rana.api.pkg.StandardPackageFormats;
+import com.jfixby.scarabei.api.collections.Collection;
+import com.jfixby.scarabei.api.collections.Collections;
+import com.jfixby.scarabei.api.collections.List;
+import com.jfixby.scarabei.api.debug.Debug;
 
 public class RanaJarLoader implements PackageReader {
 	final List<PackageFormat> acceptablePackageFormats;

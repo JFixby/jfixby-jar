@@ -6,17 +6,17 @@ import java.io.InputStream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-import com.jfixby.cmns.api.assets.ID;
-import com.jfixby.cmns.api.assets.Names;
-import com.jfixby.cmns.api.collections.Collection;
-import com.jfixby.cmns.api.collections.Collections;
-import com.jfixby.cmns.api.collections.List;
-import com.jfixby.cmns.api.debug.Debug;
-import com.jfixby.cmns.api.file.File;
-import com.jfixby.cmns.api.file.FileInputStream;
 import com.jfixby.rana.api.pkg.StandardPackageFormats;
 import com.jfixby.red.engine.core.resources.PackageUtils;
 import com.jfixby.red.engine.core.resources.PackerSpecs;
+import com.jfixby.scarabei.api.assets.ID;
+import com.jfixby.scarabei.api.assets.Names;
+import com.jfixby.scarabei.api.collections.Collection;
+import com.jfixby.scarabei.api.collections.Collections;
+import com.jfixby.scarabei.api.collections.List;
+import com.jfixby.scarabei.api.debug.Debug;
+import com.jfixby.scarabei.api.file.File;
+import com.jfixby.scarabei.api.file.FileInputStream;
 
 public class JarRanaPacker {
 

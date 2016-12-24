@@ -3,9 +3,9 @@ package com.jfixby.jar.loader;
 
 import java.io.IOException;
 
-import com.jfixby.cmns.api.assets.ID;
 import com.jfixby.rana.api.asset.Asset;
 import com.jfixby.rana.api.asset.AssetsGroup;
+import com.jfixby.scarabei.api.assets.ID;
 
 public class JavaClassContainer implements Asset {
 
