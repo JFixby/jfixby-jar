@@ -7,7 +7,7 @@ import com.jfixby.scarabei.adopted.gdx.json.RedJson;
 import com.jfixby.scarabei.api.collections.Collections;
 import com.jfixby.scarabei.api.collections.List;
 import com.jfixby.scarabei.api.desktop.DesktopSetup;
-import com.jfixby.scarabei.api.file.ChildrenList;
+import com.jfixby.scarabei.api.file.FilesList;
 import com.jfixby.scarabei.api.file.File;
 import com.jfixby.scarabei.api.file.LocalFileSystem;
 import com.jfixby.scarabei.api.json.Json;
@@ -33,13 +33,13 @@ public class PackParallaxJarsToBank {
 		final File targetTank = bank_folder.child("tank-0");
 		L.d("targetTank", targetTank);
 
-		final ChildrenList jarFolders = libsProjectFolder
+		final FilesList jarFolders = libsProjectFolder
 			.listDirectChildren(file -> !(file.getName().equals("assets") || file.getName().startsWith(".")));
 		jarFolders.print("jarFolders");
 
 		final File redReporterJarsFilder = jarFolders.findChild("parallax");
 
-		final List<File> reporterRequiredJars = redReporterJarsFilder.listAllChildren().filter(file -> file.extensionIs("jar"));
+		final FilesList reporterRequiredJars = redReporterJarsFilder.listAllChildren().filter(file -> file.extensionIs("jar"));
 
 		final List<File> jarsToPack = Collections.newList();
 		jarsToPack.addAll(reporterRequiredJars);
