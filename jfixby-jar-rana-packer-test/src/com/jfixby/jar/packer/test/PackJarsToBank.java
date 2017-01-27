@@ -3,12 +3,12 @@ package com.jfixby.jar.packer.test;
 
 import com.jfixby.jar.packer.JarRanaPacker;
 import com.jfixby.jar.packer.JarRanaPackerConfig;
-import com.jfixby.scarabei.adopted.gdx.json.RedJson;
+import com.jfixby.scarabei.adopted.gdx.json.GoogleGson;
 import com.jfixby.scarabei.api.collections.Collections;
 import com.jfixby.scarabei.api.collections.List;
 import com.jfixby.scarabei.api.desktop.DesktopSetup;
-import com.jfixby.scarabei.api.file.FilesList;
 import com.jfixby.scarabei.api.file.File;
+import com.jfixby.scarabei.api.file.FilesList;
 import com.jfixby.scarabei.api.file.LocalFileSystem;
 import com.jfixby.scarabei.api.json.Json;
 import com.jfixby.scarabei.api.log.L;
@@ -20,7 +20,7 @@ public class PackJarsToBank {
 
 	public static void main (final String[] args) throws Throwable {
 		DesktopSetup.deploy();
-		Json.installComponent(new RedJson());
+		Json.installComponent(new GoogleGson());
 
 		final File workspace_folder = LocalFileSystem.newFile(WORKSPACE_FOLDER);
 		final EclipseWorkSpaceSettings workspace_settings = EclipseWorkSpaceSettings.readWorkspaceSettings(workspace_folder);
