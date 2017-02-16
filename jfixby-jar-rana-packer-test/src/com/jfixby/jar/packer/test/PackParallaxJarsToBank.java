@@ -6,7 +6,7 @@ import com.jfixby.jar.packer.JarRanaPackerConfig;
 import com.jfixby.scarabei.adopted.gdx.json.GoogleGson;
 import com.jfixby.scarabei.api.collections.Collections;
 import com.jfixby.scarabei.api.collections.List;
-import com.jfixby.scarabei.api.desktop.DesktopSetup;
+import com.jfixby.scarabei.api.desktop.ScarabeiDesktop;
 import com.jfixby.scarabei.api.file.File;
 import com.jfixby.scarabei.api.file.FilesList;
 import com.jfixby.scarabei.api.file.LocalFileSystem;
@@ -19,7 +19,7 @@ public class PackParallaxJarsToBank {
 	public static final String WORKSPACE_FOLDER = "D:\\[DEV]\\[CODE]\\[WS-20]";
 
 	public static void main (final String[] args) throws Throwable {
-		DesktopSetup.deploy();
+		ScarabeiDesktop.deploy();
 		Json.installComponent(new GoogleGson());
 
 		final File workspace_folder = LocalFileSystem.newFile(WORKSPACE_FOLDER);
