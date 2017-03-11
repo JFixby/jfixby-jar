@@ -6,8 +6,8 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/scarabei-api-desktop"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/scarabei-red"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/scarabei-red-desktop"/>
-		<classpathentry combineaccessrules="false" kind="src" path="/scarabei-gson"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/jfixby-jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/scarabei-gson"/>
+	
 	<classpathentry combineaccessrules="false" kind="src" path="/jfixby-jar-loader"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/jfixby-jar-rana-packer"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/rana-api"/>
